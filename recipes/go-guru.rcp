@@ -1,0 +1,8 @@
+(:name go-guru
+       :description "Integration of the Go 'guru' analysis tool into Emacs"
+       :type go
+       :pkgname "golang.org/x/tools/cmd/guru"
+       :load-path "src/golang.org/x/tools/cmd/guru"
+       :post-init (progn
+                    (setq go-guru-command (concat default-directory "bin/guru"))
+                    (load "go-guru.el")))
