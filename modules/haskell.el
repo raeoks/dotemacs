@@ -1,1 +1,2 @@
-(nel:require-packages 'haskell-mode)
+(nel:require-packages 'haskell-mode
+		      'flycheck-clojure)

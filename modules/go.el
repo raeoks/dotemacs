@@ -2,7 +2,6 @@
 		      'go-def
 		      'go-lint
 		      'go-projectile
-		      'go-flymake
 		      'go-eldoc
 		      'go-errcheck
 		      'go-autocomplete
@@ -10,6 +9,7 @@
 		      'go-guru
 		      'go-test
 		      'go-rename)
+
 
 (defun nel:go-mode-hook ()
   (add-hook 'before-save-hook 'gofmt-before-save)

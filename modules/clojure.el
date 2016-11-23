@@ -1,4 +1,9 @@
-(nel:require-packages 'cider 'clj-refactor 'align-cljlet 'smartparens 'fill-column-indicator)
+(nel:require-packages 'cider
+		      'clj-refactor
+		      'align-cljlet
+		      'smartparens
+		      'fill-column-indicator
+		      'flycheck-clojure)
 
 (nel:customize-package 'cider :checkout "v0.12.0")
 (setq cider-repl-history-file "~/.emacs.d/nrepl-history")

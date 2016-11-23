@@ -1,4 +1,6 @@
-(nel:require-packages 'elixir 'alchemist 'elixir-yasnippets)
+(nel:require-packages 'elixir
+		      'alchemist
+		      'elixir-yasnippets)
 
 (setq elixir-iex-command "/usr/local/bin/iex")
 (setq elixir-compiler-command "/usr/local/bin/elixirc")
