@@ -1,4 +1,5 @@
-(nel:require-packages 'erlang-mode
+(nel:require-packages 'erlang
+		      'erlang-mode
 		      'erlware-mode)
 
 (nel:run-after-initializing
