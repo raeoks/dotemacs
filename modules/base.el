@@ -90,6 +90,8 @@
 ;; Scroll one line at a time
 (setq scroll-conservatively 10)
 
+(setq company-tooltip-align-annotations t)
+
 (global-hl-line-mode)
 
 ;; Disables audio bell
