@@ -25,6 +25,17 @@
     (setq fci-rule-column clojure-column-line)
     (turn-on-fci-mode)))
 
+(defun cider-format-buffer-back () (interactive)
+  (let (p)
+    (setq p (point))
+    (cider-format-buffer)
+    (goto-char p)))
+
+(defun add-clj-format-before-save () (interactive)
+       (add-hook 'before-save-hook
+                 'cider-format-buffer-back
+                 t t))
+
 (defmacro clojure:save-before-running (function)
   `(defadvice ,function (before save-first activate)
      (save-buffer)))
@@ -41,6 +52,7 @@
   (add-hook 'clojure-mode-hook (lambda () (cljr-add-keybindings-with-prefix "C-c C-m")))
   (add-hook 'clojure-mode-hook 'custom-cider-shortcuts)
   (add-hook 'clojure-mode-hook 'custom-turn-on-fci-mode)
+  (add-hook 'clojure-mode-hook 'add-clj-format-before-save)
 
   (add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
   (add-hook 'cider-repl-mode-hook 'show-paren-mode)
