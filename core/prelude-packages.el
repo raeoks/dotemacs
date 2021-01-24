@@ -72,7 +72,6 @@
     git-timemachine
     gitconfig-mode
     gitignore-mode
-    guru-mode
     hl-todo
     imenu-anywhere
     projectile
@@ -87,6 +86,7 @@
     volatile-highlights
     which-key
     zenburn-theme
+    solarized-theme
     zop-to-char)
   "A list of packages to ensure are installed at launch.")
 
