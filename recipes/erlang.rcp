@@ -1,6 +1,0 @@
-(:name erlang
-       :description "Erlang Major Mode"
-       :type github
-       :branch "master"
-       :pkgname "erlang/otp"
-       :load-path "lib/tools/emacs")
