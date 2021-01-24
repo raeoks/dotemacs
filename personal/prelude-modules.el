@@ -69,6 +69,7 @@
 (require 'prelude-css)
 (require 'prelude-common-lisp)
 (require 'prelude-emacs-lisp)
+(require 'prelude-go)
 (require 'prelude-js)
 (require 'prelude-lisp) ;; Common setup for Lisp-like languages
 (require 'prelude-lsp) ;; Base setup for the Language Server Protocol
@@ -77,21 +78,22 @@
 (require 'prelude-web) ;; Emacs mode for web templates
 (require 'prelude-xml)
 (require 'prelude-yaml)
+(require 'prelude-python)
+(require 'prelude-ruby)
+
 
 ;; (require 'prelude-coffee)
 ;; (require 'prelude-dart)
 
 ;; (require 'prelude-erlang)
 ;; (require 'prelude-elixir)
-;; (require 'prelude-go)
+
 ;; (require 'prelude-haskell)
 
 ;; (require 'prelude-latex)
 
 ;; (require 'prelude-ocaml)
 
-;; (require 'prelude-python)
-;; (require 'prelude-ruby)
 ;; (require 'prelude-rust)
 ;; (require 'prelude-scala)
 ;; (require 'prelude-scheme)
