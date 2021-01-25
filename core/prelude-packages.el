@@ -72,6 +72,7 @@
     git-timemachine
     gitconfig-mode
     gitignore-mode
+    guru-mode
     hl-todo
     imenu-anywhere
     projectile
